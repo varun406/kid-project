@@ -1,12 +1,15 @@
 import styled from "styled-components";
 export const Wrapper = styled.div`
+  width: calc(100% - 3rem);
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 30px;
   background-color: #f7f7f7;
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 768px) {
+    width: 100%;
     flex-direction: row;
     height: 22rem;
   }

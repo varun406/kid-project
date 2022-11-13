@@ -7,7 +7,6 @@ export const Box = styled(Container)`
 `;
 
 export const Wrapper = styled.div`
-  width: calc(100% - 3rem);
   margin-inline: auto;
   max-width: 1100px;
   display: flex;

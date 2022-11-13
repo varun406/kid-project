@@ -1,4 +1,14 @@
 import styled from "styled-components";
+import { Container } from "../CommonStyles";
+
+export const styleContainer = styled(Container)`
+  width: calc(100% - 3rem);
+  margin-inline: auto;
+
+  @media only screen and (min-width: 768px) {
+    width: 100%;
+  }
+`;
 
 export const Heading = styled.h1`
   font-size: 2.5rem;

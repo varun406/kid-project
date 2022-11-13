@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Box>
       <GlobalStyles />
-      <Header />
+      {/* <Header /> */}
       <Wrapper>
         <Details />
         <Course />

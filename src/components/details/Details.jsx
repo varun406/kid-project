@@ -14,7 +14,7 @@ import {
 
 const Details = () => {
   return (
-    <Container>
+    <Container bgColor=" #f7f7f7">
       <Wrapper>
         <LeftSection>
           <Picture
