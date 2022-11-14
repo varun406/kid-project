@@ -8,10 +8,10 @@ export const Box = styled(Container)`
 
 export const Wrapper = styled.div`
   margin-inline: auto;
-  max-width: 1100px;
+  width: min(calc(100% - 3rem), 1100px);
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 `;
 
 export const GlobalStyles = createGlobalStyle`

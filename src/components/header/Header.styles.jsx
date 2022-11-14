@@ -1,7 +1,6 @@
 import styled from "styled-components";
 export const Wrapper = styled.div`
-  width: 100%;
-  max-width: calc(100% - 3rem);
+  max-width: 1400px;
   height: 80px;
   margin-inline: auto;
   display: flex;
@@ -10,8 +9,8 @@ export const Wrapper = styled.div`
 `;
 
 export const LogoSection = styled.div`
-  width: 18.75;
-  height: 3.75;
+  width: 200px;
+  height: 60px;
 `;
 
 export const Logo = styled.img`
@@ -26,9 +25,13 @@ export const Navigation = styled.div`
 
   a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: 500;
     color: black;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
 `;
 
@@ -36,11 +39,11 @@ export const UserSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 `;
 
 export const iconStyles = {
-  width: "2.5rem",
-  height: "2.5rem",
+  width: "40px",
+  height: "40px",
   cursor: "pointer",
 };

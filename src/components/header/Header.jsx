@@ -17,10 +17,7 @@ const Header = () => {
     <Container>
       <Wrapper>
         <LogoSection>
-          <Logo
-            src="https://cdn.shopify.com/s/files/1/0533/7084/7416/files/logoDL7_2560L_200x.jpg?v=1613721070"
-            alt="logo"
-          />
+          <Logo src="./assets/logo.jpg" alt="logo" />
         </LogoSection>
 
         <Navigation>

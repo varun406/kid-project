@@ -1,37 +1,38 @@
 import styled from "styled-components";
+
 export const Wrapper = styled.div`
-  width: calc(100% - 3rem);
+  width: 100%;
   margin-inline: auto;
+
+  background-color: #f7f7f7;
+  margin-top: 20px;
+`;
+
+export const DetailSection = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
   gap: 30px;
-  background-color: #f7f7f7;
 
-  @media only screen and (min-width: 768px) {
-    width: 100%;
-    flex-direction: row;
-    height: 22rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 
-export const LeftSection = styled.div``;
+export const LeftSection = styled.div`
+  display: grid;
+  place-items: center;
+`;
 
 export const Picture = styled.img`
-  width: 100%;
-  height: 100%;
+  width: max(320px, 100%);
+  max-height: 350px;
   border-radius: 20px;
   object-fit: cover;
-
-  @media only screen and (min-width: 600px) {
-    width: 22rem;
-    height: 22rem;
-  }
 `;
 
 export const RightSection = styled.div`
-  width: calc(100% - 2rem);
-  margin-inline: auto;
+  width: 100%;
   display: grid;
   place-items: center;
 `;
@@ -42,16 +43,17 @@ export const DetailsSection = styled.div`
   gap: 10px;
 `;
 
-export const DetailsTitle = styled.h1``;
+export const DetailsTitle = styled.h1`
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 12px;
+`;
 
 export const DetailsInfo = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  gap: 20px;
 `;
 
 export const ParaOne = styled.p`
-  text-align: justify;
+  text-align: left;
 `;
-export const ParaTwo = styled(ParaOne)``;

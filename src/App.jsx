@@ -1,7 +1,7 @@
 import Home from "./pages/home/Home";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Router>
@@ -11,6 +11,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;
