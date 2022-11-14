@@ -13,7 +13,7 @@ const Home = () => {
       <GlobalStyles />
       <Header />
       <Wrapper>
-        {/* <Carousel /> */}
+        <Carousel />
         <Details />
         <Course />
         <CTA />
