@@ -16,18 +16,20 @@ const Carousel = () => {
   };
 
   return (
-    <Container bgColor="lightgrey">
-      <ImgSlider {...settings}>
-        <ImgWrap>
-          <SlideImg src="http://placekitten.com/g/400/200" />
-        </ImgWrap>
-        <ImgWrap>
-          <SlideImg src="http://placekitten.com/g/400/200" />
-        </ImgWrap>
-        <ImgWrap>
-          <SlideImg src="http://placekitten.com/g/400/200" />
-        </ImgWrap>
-      </ImgSlider>
+    <Container>
+      <Wrapper>
+        <ImgSlider {...settings}>
+          <ImgWrap>
+            <SlideImg src="http://placekitten.com/g/1100/300" />
+          </ImgWrap>
+          <ImgWrap>
+            <SlideImg src="http://placekitten.com/g/1100/300" />
+          </ImgWrap>
+          <ImgWrap>
+            <SlideImg src="http://placekitten.com/g/1100/300" />
+          </ImgWrap>
+        </ImgSlider>
+      </Wrapper>
     </Container>
   );
 };
