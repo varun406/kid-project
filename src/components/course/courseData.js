@@ -1,6 +1,6 @@
 export const data = [
   {
-    img: "./assets/img1.jpeg",
+    img: "./assets/img1.jpg",
     title: "Home-based STEAM Learning",
     content:
       "For schools & students - Learning doesn't stop in school! Continue your learning at home via online platforms that facilitate and value-add home-based learning for students.",
@@ -15,6 +15,6 @@ export const data = [
     img: "./assets/img3.jpg",
     title: "Rulang STEM Conference",
     content:
-      "For MOE teachers - Attend our annual STEM conference in collaboration with Rulang Primary School, a centre of excellence for robotics.",
+      "For MOE teachers - Attend our annual STEM conference in collaboration with Rulang Primary School, a centre of excellence for robotics.home-based learning for students with Rulang Primary School.",
   },
 ];

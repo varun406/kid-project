@@ -8,6 +8,7 @@ export const Heading = styled.h1`
 
 export const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;

@@ -20,13 +20,13 @@ const Carousel = () => {
       <Wrapper>
         <ImgSlider {...settings}>
           <ImgWrap>
-            <SlideImg src="http://placekitten.com/g/1100/300" />
+            <SlideImg src="http://placekitten.com/g/1100/500" />
           </ImgWrap>
           <ImgWrap>
-            <SlideImg src="http://placekitten.com/g/1100/300" />
+            <SlideImg src="http://placekitten.com/g/1100/500" />
           </ImgWrap>
           <ImgWrap>
-            <SlideImg src="http://placekitten.com/g/1100/300" />
+            <SlideImg src="http://placekitten.com/g/1100/500" />
           </ImgWrap>
         </ImgSlider>
       </Wrapper>

@@ -1,13 +1,13 @@
 import React from "react";
 import Card from "../card/Card";
-import { Container } from "../CommonStyles";
-import { Heading, Wrapper } from "./Course.styles";
+import { Container, SectionHeading } from "../CommonStyles";
+import { Wrapper } from "./Course.styles";
 import { data } from "./courseData";
 
 const Course = () => {
   return (
     <Container bgColor=" #f7f7f7">
-      <Heading>Our Courses</Heading>
+      <SectionHeading>Our Courses</SectionHeading>
       <Wrapper>
         {data.map((course) => {
           return (

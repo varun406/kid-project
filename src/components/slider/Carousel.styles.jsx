@@ -3,7 +3,11 @@ import Slider from "react-slick";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 300px;
+  min-height: 500px;
+
+  @media (max-width: 768px) {
+    min-height: 200px;
+  }
 `;
 
 export const ImgSlider = styled(Slider)`
@@ -18,7 +22,7 @@ export const ImgSlider = styled(Slider)`
   }
 
   .slick-arrow {
-    background-color: darkblue;
+    background-color: lightgrey;
     border-radius: 50%;
   }
 

@@ -66,16 +66,16 @@ const Footer = () => {
               <EmailLogo>
                 <EmailOutlined />
               </EmailLogo>
-              <EmailId>abc.paradoxalpha@gmail.com</EmailId>
+              <EmailId>abc@gmail.com</EmailId>
             </EmailSection>
           </GetInTouch>
-          <CopyRightSection>
-            <CopyRightHeading>
-              © 2017 Shenzhen Bell Creative Science and Education Co., Ltd. All
-              rights reserved.
-            </CopyRightHeading>
-          </CopyRightSection>
         </FooterWrap>
+        <CopyRightSection>
+          <CopyRightHeading>
+            © 2017 Shenzhen Bell Creative Science and Education Co., Ltd. All
+            rights reserved.
+          </CopyRightHeading>
+        </CopyRightSection>
       </Wrapper>
     </Container>
   );

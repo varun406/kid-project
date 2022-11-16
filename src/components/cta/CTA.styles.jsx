@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionHeading } from "../CommonStyles";
 
 export const Wrapper = styled.div`
   width: calc(100% - 30px);
@@ -11,7 +12,9 @@ export const Wrapper = styled.div`
   gap: 20px;
 `;
 
-export const CTATitle = styled.h1``;
+export const CTATitle = styled(SectionHeading)`
+  line-height: 1.4;
+`;
 
 export const CTAButton = styled.button`
   width: 160px;

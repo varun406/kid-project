@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../CommonStyles";
+import { Container, SectionHeading } from "../CommonStyles";
 import { CTAButton, CTATitle, Wrapper } from "./CTA.styles";
 
 const CTA = () => {

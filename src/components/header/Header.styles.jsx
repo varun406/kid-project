@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const Wrapper = styled.div`
-  max-width: 1400px;
-  height: 80px;
+  width: min(1100px, calc(100% - 40px));
+  min-height: 85px;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -9,30 +9,14 @@ export const Wrapper = styled.div`
 `;
 
 export const LogoSection = styled.div`
-  width: 200px;
-  height: 60px;
+  max-width: 150px;
+  min-height: 80px;
 `;
 
 export const Logo = styled.img`
   width: 100%;
-  height: 100%;
+  height: 80px;
   object-fit: cover;
-`;
-
-export const Navigation = styled.div`
-  display: flex;
-  gap: 30px;
-
-  a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    color: black;
-
-    @media only screen and (max-width: 768px) {
-      display: none;
-    }
-  }
 `;
 
 export const UserSection = styled.div`
@@ -40,6 +24,32 @@ export const UserSection = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
+
+  a {
+    text-decoration: none;
+  }
+`;
+
+export const RegisterButton = styled.button`
+  width: 130px;
+  min-height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 25px;
+  outline: none;
+  display: grid;
+  place-items: center;
+`;
+
+export const LoginButton = styled(RegisterButton)`
+  width: min-content;
+  background: transparent;
+  border: none;
+  border-radius: 0;
 `;
 
 export const iconStyles = {

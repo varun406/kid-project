@@ -3,13 +3,17 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   max-width: 1100px;
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  padding-block: 30px;
 `;
 
 export const FooterWrap = styled.div`
   width: calc(100% - 20px);
   margin-inline: auto;
   display: flex;
-  margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 40px;
   padding-block: 15px;
 
@@ -77,4 +81,6 @@ export const CopyRightSection = styled.div`
   align-items: center;
   justify-content: center;
 `;
-export const CopyRightHeading = styled.p``;
+export const CopyRightHeading = styled.p`
+  text-align: center;
+`;
