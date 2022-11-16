@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../CommonStyles";
+import { Container, GlobalStyles } from "../CommonStyles";
 import { AccountCircle, ShoppingCart } from "@mui/icons-material";
 import {
   iconStyles,
@@ -16,17 +16,20 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <Container>
+      <GlobalStyles />
       <Wrapper>
-        <LogoSection>
-          <Logo src="./assets/logo1.png" alt="logo" />
-        </LogoSection>
+        <Link to="/">
+          <LogoSection>
+            <Logo src="./assets/logo1.png" alt="logo" />
+          </LogoSection>
+        </Link>
 
         <Navigation direction="row" />
         <UserSection>
-          <Link>
+          <Link to="/login">
             <LoginButton>Login</LoginButton>
           </Link>
-          <Link>
+          <Link to="/signup">
             <RegisterButton>Register</RegisterButton>
           </Link>
           {/* <AccountCircle sx={iconStyles} />

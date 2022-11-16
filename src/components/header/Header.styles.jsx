@@ -34,7 +34,7 @@ export const RegisterButton = styled.button`
   width: 130px;
   min-height: 40px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: black;
   cursor: pointer;
   border: 2px solid black;
@@ -43,6 +43,7 @@ export const RegisterButton = styled.button`
   outline: none;
   display: grid;
   place-items: center;
+  font-family: "Poppins", sans-serif;
 `;
 
 export const LoginButton = styled(RegisterButton)`

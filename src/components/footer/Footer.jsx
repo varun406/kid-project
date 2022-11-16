@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../CommonStyles";
+import { Container, GlobalStyles } from "../CommonStyles";
 import { Link } from "react-router-dom";
 import {
   CopyRightHeading,
@@ -33,6 +33,7 @@ import {
 const Footer = () => {
   return (
     <Container bgColor="lightgrey">
+      <GlobalStyles />
       <Wrapper>
         <FooterWrap>
           <MoreInfo>

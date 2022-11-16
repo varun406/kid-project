@@ -10,15 +10,21 @@ import Carousel from "../../components/slider/Carousel";
 import { Box, Wrapper } from "./Home.styles";
 
 const Home = () => {
+  const CTAHeading =
+    "Each student needs something different to shine. Let's find out together.";
+  const CTACall = "Get Started";
+
   return (
     <Box>
+      <GlobalStyles />
+
       {/* <Sidebar /> */}
       <Header />
       <Wrapper>
         <Carousel />
         <Details />
         <Course />
-        <CTA />
+        <CTA CTAHeading={CTAHeading} CTACall={CTACall} />
       </Wrapper>
       <Footer />
     </Box>

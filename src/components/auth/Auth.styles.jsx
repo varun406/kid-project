@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SectionHeading } from "../CommonStyles";
 
 export const Wrapper = styled.div`
   width: 100vw;
@@ -9,8 +10,8 @@ export const Wrapper = styled.div`
 `;
 
 export const LoginWrap = styled.div`
-  width: min(800px, calc(100% - 20px));
-  height: 500px;
+  width: min(820px, calc(100% - 20px));
+  min-height: 590px;
   display: flex;
   border-radius: 15px;
   overflow: hidden;
@@ -29,7 +30,7 @@ export const IllustrationSection = styled.div`
 
 export const IllustrationImage = styled.img`
   max-width: 400px;
-  height: 500px;
+  min-height: 500px;
   object-fit: contain;
 `;
 
@@ -39,63 +40,25 @@ export const CredentialSection = styled.div`
   place-items: center;
 `;
 export const LoginSection = styled.form`
-  min-width: 200px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 `;
 export const HeadingSection = styled.div``;
-export const Heading = styled.h1`
-  font-size: 26px;
-  font-weight: 600;
+export const Heading = styled(SectionHeading)`
+  line-height: 0.2;
 `;
 export const CredentialDetails = styled.div`
+  max-width: 330px;
+  max-height: 380px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-`;
-export const InputSection = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
 `;
 
-export const Error = styled.p`
-  font-size: 14px;
-  font-weight: 400;
-  color: red;
+export const NoticeSection = styled.div`
+  text-align: center;
   margin-top: -5px;
 `;
-
-export const InputLabel = styled.p`
-  font-size: 15px;
-  font-weight: 500;
-`;
-export const InputField = styled.input`
-  max-width: 250px;
-  height: 35px;
-  outline: none;
-  border-radius: 7px;
-  background: transparent;
-  font-size: 15px;
-  font-weight: 400;
-  border: 1px solid darkgray;
-  padding: 5px 10px;
-`;
-export const LoginButton = styled.button`
-  width: 100%;
-  height: 35px;
-  border-radius: 7px;
-  outline: none;
-  border: none;
-  text-align: center;
-  background-color: darkblue;
-  color: white;
-  font-weight: 600;
-  letter-spacing: 1px;
-`;
-export const NoticeSection = styled.div``;
 export const Notice = styled.p``;
 export const Break = styled.span`
   a {

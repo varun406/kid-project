@@ -15,48 +15,7 @@ export const Wrapper = styled.div`
   padding-block: 50px;
 `;
 
-export const BannerSection = styled.div`
-  width: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-`;
-
-export const Banner = styled.img`
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-`;
-
 export const OverViewSection = styled.div``;
-
-export const BriefSection = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-
-  @media (max-width: 768px) {
-    flex-direction: column-reverse;
-    gap: 20px;
-  }
-`;
-export const InfoColumn = styled.div`
-  flex: 1;
-  margin: auto;
-`;
-
-export const ImageColumn = styled.div`
-  flex: 1;
-  border-radius: 20px;
-  overflow: hidden;
-`;
-export const SectionImage = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  @media (max-width: 768px) {
-    min-height: 350px;
-  }
-`;
 
 export const TeamSection = styled.div`
   display: grid;
@@ -96,7 +55,8 @@ export const CardWrap = styled.div`
 `;
 
 export const TeamImg = styled.img`
-  width: 100%;
+  width: calc(100% - 15px);
+  margin-inline: auto;
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
@@ -107,7 +67,7 @@ export const TeamDesc = styled.div`
 export const Name = styled.p`
   font-size: 20px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 0;
 `;
 export const Designation = styled.p`
   font-size: 14px;

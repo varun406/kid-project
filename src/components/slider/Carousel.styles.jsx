@@ -3,10 +3,11 @@ import Slider from "react-slick";
 
 export const Wrapper = styled.div`
   width: 100%;
-  min-height: 500px;
+  min-height: 540px;
+  background-color: #f7f7f7;
 
   @media (max-width: 768px) {
-    min-height: 200px;
+    min-height: 170px;
   }
 `;
 
@@ -21,13 +22,17 @@ export const ImgSlider = styled(Slider)`
     color: black;
   }
 
-  .slick-arrow {
-    background-color: lightgrey;
-    border-radius: 50%;
+  .slick-list {
+    overflow: visible;
   }
 
   button {
     z-index: 1;
+  }
+
+  .slick-arrow {
+    background-color: darkblue;
+    border-radius: 50%;
   }
 `;
 

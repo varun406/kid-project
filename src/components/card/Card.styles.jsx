@@ -23,14 +23,14 @@ export const ImageSection = styled.div`
 `;
 
 export const CourseImage = styled.img`
-  width: calc(100% - 15px);
+  width: calc(100% - 20px);
   height: 100%;
   object-fit: cover;
   border-radius: 15px;
 `;
 
 export const DetailSection = styled.div`
-  width: calc(100% - 15px);
+  width: calc(100% - 20px);
   margin-inline: auto;
   display: grid;
   place-items: center;

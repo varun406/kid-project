@@ -1,21 +1,24 @@
-import { ErrorSharp } from "@mui/icons-material";
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import { Container, GlobalStyles } from "../CommonStyles";
+import {
+  Container,
+  Error,
+  FormButton,
+  GlobalStyles,
+  InputField,
+  InputLabel,
+  InputSection,
+  PhoneError,
+} from "../CommonStyles";
 import {
   Break,
   CredentialDetails,
   CredentialSection,
-  Error,
   Heading,
   HeadingSection,
   IllustrationImage,
   IllustrationSection,
-  InputField,
-  InputLabel,
-  InputSection,
-  LoginButton,
   LoginSection,
   LoginWrap,
   Notice,
@@ -36,9 +39,11 @@ const Auth = ({ method }) => {
 
   const onSubmit = (d) => {
     alert(JSON.stringify(d));
-    console.log(watch(["name", "password"]));
+    console.log(d);
     reset();
   };
+
+  // console.log(watch("password"));
 
   return (
     <Container>
@@ -62,7 +67,7 @@ const Auth = ({ method }) => {
                           pattern: /^[A-Za-z]+$/i,
                         })}
                       />
-                      <Error>{errors.name?.message}</Error>
+                      <Error>{errors.name?.message || "error"}</Error>
                     </InputSection>
                     <InputSection>
                       <InputLabel>Phone</InputLabel>
@@ -71,7 +76,7 @@ const Auth = ({ method }) => {
                         placeholder="7030XXXXXX"
                         {...register("phone")}
                       />
-                      <Error>{errors.phone?.message}</Error>
+                      <PhoneError>{errors.phone?.message}</PhoneError>
                     </InputSection>
                   </>
                 ) : null}
@@ -94,9 +99,9 @@ const Auth = ({ method }) => {
                   <Error>{errors.password?.message}</Error>
                 </InputSection>
               </CredentialDetails>
-              <LoginButton type="submit">
+              <FormButton method={method} type="submit">
                 {method === "signup" ? "Sign up" : "Login"}
-              </LoginButton>
+              </FormButton>
               <NoticeSection>
                 <Notice>
                   {method === "signup"

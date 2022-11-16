@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "../CommonStyles";
+import { Container, GlobalStyles } from "../CommonStyles";
 import {
   BrowseMoreButton,
   Cards,
@@ -15,6 +15,7 @@ import {
 const Card = ({ title, content, image }) => {
   return (
     <Wrapper>
+      <GlobalStyles />
       <Cards>
         <ImageSection>
           <CourseImage src={image} alt="course_img" />

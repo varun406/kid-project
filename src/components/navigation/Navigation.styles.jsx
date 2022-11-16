@@ -12,7 +12,7 @@ export const NavigationSection = styled.div`
     font-weight: 500;
     color: #393e46;
 
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
       display: none;
     }
   }

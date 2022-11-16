@@ -1,23 +1,27 @@
 import { CheckBoxOutlined } from "@mui/icons-material";
 import React from "react";
-import { SectionDesc, SectionHeading } from "../../components/CommonStyles";
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
 import {
   Banner,
   BannerSection,
+  BriefSection,
+  GlobalStyles,
+  ImageColumn,
+  InfoColumn,
+  SectionDesc,
+  SectionHeading,
+  SectionImage,
+} from "../../components/CommonStyles";
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
+import {
   Benefit,
   BenefitDesc,
   BenefitLogo,
   BenefitSection,
   Box,
-  BriefSection,
   CardWrap,
   Designation,
   Heading,
-  ImageColumn,
-  InfoColumn,
-  SectionImage,
   Name,
   RegisterButton,
   RegisterNowSection,
@@ -35,6 +39,8 @@ import { team } from "./teamData";
 const AboutUs = () => {
   return (
     <Box>
+      <GlobalStyles />
+
       <Header />
       <Wrapper>
         <BannerSection>

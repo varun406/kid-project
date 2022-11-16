@@ -1,15 +1,15 @@
 import React from "react";
-import { SectionImage } from "../../pages/about/AboutUs.styles";
-import { Container, SectionDesc, SectionHeading } from "../CommonStyles";
+import {
+  Container,
+  SectionDesc,
+  SectionHeading,
+  SectionImage,
+} from "../CommonStyles";
 import {
   DetailSection,
   DetailsInfo,
   DetailsSection,
-  DetailsTitle,
   LeftSection,
-  ParaOne,
-  ParaTwo,
-  Picture,
   RightSection,
   Wrapper,
 } from "./Details.styles";

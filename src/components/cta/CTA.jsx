@@ -1,16 +1,16 @@
 import React from "react";
-import { Container, SectionHeading } from "../CommonStyles";
+import { Link } from "react-router-dom";
+import { Container } from "../CommonStyles";
 import { CTAButton, CTATitle, Wrapper } from "./CTA.styles";
 
-const CTA = () => {
+const CTA = ({ CTAHeading, CTACall, to }) => {
   return (
     <Container bgColor="#BCCEF8" borderRadius="20px">
       <Wrapper>
-        <CTATitle>
-          Each student needs something different to shine. Let's find out
-          together.
-        </CTATitle>
-        <CTAButton>Get Started</CTAButton>
+        <CTATitle>{CTAHeading}</CTATitle>
+        <Link to={to}>
+          <CTAButton>{CTACall}</CTAButton>
+        </Link>
       </Wrapper>
     </Container>
   );

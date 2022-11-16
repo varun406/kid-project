@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { SectionHeading } from "../CommonStyles";
 
 export const Wrapper = styled.div`
-  width: calc(100% - 30px);
+  width: calc(100% - 48px);
   border-radius: 20px;
   margin-inline: auto;
   display: flex;
@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   padding-block: 16px;
   gap: 20px;
+  text-align: center;
 `;
 
 export const CTATitle = styled(SectionHeading)`
@@ -17,8 +18,8 @@ export const CTATitle = styled(SectionHeading)`
 `;
 
 export const CTAButton = styled.button`
-  width: 160px;
-  height: 40px;
+  min-width: 200px;
+  height: 45px;
   border-radius: 35px;
   outline: none;
   border: none;
@@ -26,4 +27,7 @@ export const CTAButton = styled.button`
   font-weight: bold;
   background-color: darkblue;
   color: white;
+  font-family: "Poppins", sans-serif;
+  margin-inline: auto;
+  cursor: pointer;
 `;
