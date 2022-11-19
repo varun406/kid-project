@@ -24,7 +24,6 @@ import {
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import Pulse from "react-reveal/Pulse";
-// import { contactSchema } from "./contactSchema";
 
 const Contact = () => {
   const {
@@ -36,7 +35,6 @@ const Contact = () => {
   } = useForm();
 
   const onSubmitt = (d) => {
-    console.log(d);
     alert(JSON.stringify(d));
     reset();
   };

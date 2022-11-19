@@ -39,12 +39,9 @@ const Auth = ({ method }) => {
 
   const onSubmited = (d) => {
     alert(JSON.stringify(d));
-    console.log(d);
     reset();
   };
 
-  // console.log(watch("email"));
-  // console.log(watch("password"));
   return (
     <Container>
       <Wrapper>

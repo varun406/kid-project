@@ -5,6 +5,6 @@ export const Wrapper = styled.div`
   margin-inline: auto;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 50px;
   padding-block: 50px;
 `;
