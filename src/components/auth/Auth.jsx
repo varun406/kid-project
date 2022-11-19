@@ -26,7 +26,7 @@ import {
   Wrapper,
 } from "./Auth.styles";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { schema } from "./validator";
+import { authSchema } from "./validator";
 
 const Auth = ({ method }) => {
   const {
@@ -35,23 +35,23 @@ const Auth = ({ method }) => {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm({ resolver: yupResolver(schema) });
+  } = useForm({ resolver: yupResolver(authSchema) });
 
-  const onSubmit = (d) => {
+  const onSubmited = (d) => {
     alert(JSON.stringify(d));
     console.log(d);
     reset();
   };
 
+  // console.log(watch("email"));
   // console.log(watch("password"));
-
   return (
     <Container>
       <Wrapper>
         <GlobalStyles />
         <LoginWrap>
           <CredentialSection>
-            <LoginSection onSubmit={handleSubmit(onSubmit)}>
+            <LoginSection onSubmit={handleSubmit(onSubmited)}>
               <HeadingSection>
                 <Heading>{method === "signup" ? "Sign up" : "Login"}</Heading>
               </HeadingSection>
@@ -63,11 +63,9 @@ const Auth = ({ method }) => {
                       <InputField
                         type="text"
                         placeholder="Enter your name"
-                        {...register("name", {
-                          pattern: /^[A-Za-z]+$/i,
-                        })}
+                        {...register("name")}
                       />
-                      <Error>{errors.name?.message || "error"}</Error>
+                      <Error>{errors.name?.message}</Error>
                     </InputSection>
                     <InputSection>
                       <InputLabel>Phone</InputLabel>

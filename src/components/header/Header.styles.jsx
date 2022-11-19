@@ -8,14 +8,25 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 
+export const MenuSection = styled.div`
+  display: none;
+
+  @media (max-width: 992px) {
+    display: flex;
+  }
+`;
+
 export const LogoSection = styled.div`
-  max-width: 150px;
-  min-height: 80px;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 `;
 
 export const Logo = styled.img`
   width: 100%;
-  height: 80px;
+  height: 60px;
   object-fit: cover;
 `;
 
@@ -23,7 +34,7 @@ export const UserSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 
   a {
     text-decoration: none;
@@ -35,9 +46,9 @@ export const RegisterButton = styled.button`
   min-height: 40px;
   font-size: 16px;
   font-weight: 600;
-  color: black;
+  color: #487bb6;
   cursor: pointer;
-  border: 2px solid black;
+  border: 2px solid #5a9cbf;
   background: transparent;
   border-radius: 25px;
   outline: none;
@@ -51,10 +62,5 @@ export const LoginButton = styled(RegisterButton)`
   background: transparent;
   border: none;
   border-radius: 0;
+  color: black;
 `;
-
-export const iconStyles = {
-  width: "40px",
-  height: "40px",
-  cursor: "pointer",
-};

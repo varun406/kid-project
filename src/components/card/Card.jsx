@@ -1,18 +1,19 @@
 import React from "react";
-import { Container, GlobalStyles } from "../CommonStyles";
+import { Cards, CourseImage, GlobalStyles } from "../CommonStyles";
 import {
-  BrowseMoreButton,
-  Cards,
+  Author,
   CourseDetails,
-  CourseImage,
-  Desc,
   DetailSection,
   ImageSection,
+  Price,
+  PriceSection,
+  RatingSection,
   Title,
   Wrapper,
 } from "./Card.styles";
+import Rating from "@mui/material/Rating";
 
-const Card = ({ title, content, image }) => {
+const Card = ({ title, author, image }) => {
   return (
     <Wrapper>
       <GlobalStyles />
@@ -23,8 +24,13 @@ const Card = ({ title, content, image }) => {
         <DetailSection>
           <CourseDetails>
             <Title>{title}</Title>
-            <Desc>{content}</Desc>
-            <BrowseMoreButton>Browse More</BrowseMoreButton>
+            <RatingSection>
+              <Author>{author}</Author>
+              <Rating value={4} size="medium" readOnly />
+            </RatingSection>
+            <PriceSection>
+              <Price>999₹</Price>
+            </PriceSection>
           </CourseDetails>
         </DetailSection>
       </Cards>

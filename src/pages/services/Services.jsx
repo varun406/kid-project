@@ -15,6 +15,8 @@ import Footer from "../../components/footer/Footer";
 import { serviceData } from "./serviceData";
 import { Wrapper } from "./Services.styles";
 import CTA from "../../components/cta/CTA";
+import Fade from "react-reveal/Fade";
+import Pulse from "react-reveal/Pulse";
 
 const Services = () => {
   const CTAHeading = "Interested or need more information ?";
@@ -27,22 +29,26 @@ const Services = () => {
   return (
     <Container bgColor="#f7f7f7">
       <Header />
-      <Wrapper>
-        <BannerSection>
-          <Banner src="./assets/services-banner.jpg" />
-        </BannerSection>
 
+      <Wrapper>
+        <Pulse>
+          <BannerSection>
+            <Banner src="./assets/services-banner.jpg" />
+          </BannerSection>
+        </Pulse>
         {serviceData.map((data, index) => {
           return (
-            <BriefSection direction={changeDirection(index)} key={index}>
-              <InfoColumn>
-                <SectionHeading>{data.heading}</SectionHeading>
-                <SectionDesc>{data.desc}</SectionDesc>
-              </InfoColumn>
-              <ImageColumn>
-                <SectionImage src={data.img} />
-              </ImageColumn>
-            </BriefSection>
+            <Fade>
+              <BriefSection direction={changeDirection(index)} key={index}>
+                <InfoColumn>
+                  <SectionHeading>{data.heading}</SectionHeading>
+                  <SectionDesc>{data.desc}</SectionDesc>
+                </InfoColumn>
+                <ImageColumn>
+                  <SectionImage src={data.img} />
+                </ImageColumn>
+              </BriefSection>
+            </Fade>
           );
         })}
 

@@ -1,9 +1,9 @@
 import React from "react";
-import { Container } from "../CommonStyles";
-import Slider from "react-slick";
-import { ImgSlider, ImgWrap, SlideImg, Wrapper } from "./Carousel.styles";
+import { Container, StyledSlider } from "../CommonStyles";
+import { ImgWrap, SlideImg, Wrapper } from "./Carousel.styles";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Pulse from "react-reveal/Pulse";
 
 const Carousel = () => {
   const settings = {
@@ -16,21 +16,23 @@ const Carousel = () => {
   };
 
   return (
-    <Container>
-      <Wrapper>
-        <ImgSlider {...settings}>
-          <ImgWrap>
-            <SlideImg src="http://placekitten.com/g/1100/500" />
-          </ImgWrap>
-          <ImgWrap>
-            <SlideImg src="http://placekitten.com/g/1100/500" />
-          </ImgWrap>
-          <ImgWrap>
-            <SlideImg src="http://placekitten.com/g/1100/500" />
-          </ImgWrap>
-        </ImgSlider>
-      </Wrapper>
-    </Container>
+    <Pulse>
+      <Container>
+        <Wrapper>
+          <StyledSlider {...settings}>
+            <ImgWrap>
+              <SlideImg src="http://placekitten.com/g/1100/500" />
+            </ImgWrap>
+            <ImgWrap>
+              <SlideImg src="http://placekitten.com/g/1100/500" />
+            </ImgWrap>
+            <ImgWrap>
+              <SlideImg src="http://placekitten.com/g/1100/500" />
+            </ImgWrap>
+          </StyledSlider>
+        </Wrapper>
+      </Container>
+    </Pulse>
   );
 };
 

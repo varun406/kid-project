@@ -1,3 +1,4 @@
+import Slider from "react-slick";
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
@@ -9,12 +10,20 @@ export const GlobalStyles = createGlobalStyle`
     }
 `;
 
+export const iconStyles = {
+  width: "35px",
+  height: "35px",
+  cursor: "pointer",
+};
+
 export const Container = styled.div`
   width: 100%;
   border-radius: ${(props) => props.borderRadius || 0};
   background-color: ${(props) => props.bgColor || "white"};
   overflow: hidden;
 `;
+
+//BANNER
 
 export const BannerSection = styled.div`
   width: 100%;
@@ -27,6 +36,8 @@ export const Banner = styled.img`
   max-height: 400px;
   object-fit: cover;
 `;
+
+//BRIEF
 
 export const BriefSection = styled.div`
   display: flex;
@@ -59,9 +70,10 @@ export const SectionImage = styled.img`
 `;
 
 export const SectionHeading = styled.h1`
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1;
+  margin: 0 0 20px;
 `;
 export const SectionDesc = styled.p`
   font-size: 20px;
@@ -69,6 +81,8 @@ export const SectionDesc = styled.p`
   line-height: 1.7;
   text-align: justify;
 `;
+
+//FORM
 
 export const InputSection = styled.div`
   width: 100%;
@@ -124,4 +138,57 @@ export const FormButton = styled.button`
   justify-content: center;
   cursor: pointer;
   margin-top: ${(props) => (props.method === "signup" ? "30px" : "10px")};
+`;
+
+//SLIDER
+
+export const StyledSlider = styled(Slider)`
+  width: 100%;
+  height: 100%;
+
+  ul li button {
+    &:before {
+      font-size: 10px;
+      color: rgb(150, 158, 171);
+    }
+  }
+
+  li.slick-active button::before {
+    color: white;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  button {
+    z-index: 1;
+  }
+
+  .slick-prev {
+    left: 3% !important;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+  }
+`;
+
+// CARDS
+
+export const Cards = styled.div`
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 15px;
+`;
+
+export const CourseImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
 `;

@@ -46,24 +46,15 @@ export const TeamCard = styled.div`
   box-shadow: -1px -1px 20px -14px rgba(0, 0, 0, 0.75);
 `;
 
-export const CardWrap = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 10px;
+export const CourseImageSection = styled.div`
+  max-width: calc(100% - 20px);
+  margin-inline: auto;
 `;
 
-export const TeamImg = styled.img`
-  width: calc(100% - 15px);
-  margin-inline: auto;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-`;
 export const TeamDesc = styled.div`
   text-align: center;
 `;
+
 export const Name = styled.p`
   font-size: 20px;
   font-weight: 600;
@@ -72,6 +63,7 @@ export const Name = styled.p`
 export const Designation = styled.p`
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 0;
 `;
 
 export const RegisterNowSection = styled.div`
@@ -104,7 +96,7 @@ export const Benefit = styled.div`
 export const BenefitLogo = styled.div``;
 export const BenefitDesc = styled.div``;
 export const RegisterButton = styled.button`
-  min-width: 150px;
+  min-width: 170px;
   min-height: 50px;
   background-color: black;
   outline: none;
@@ -112,9 +104,12 @@ export const RegisterButton = styled.button`
   border-radius: 30px;
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bolder;
   box-shadow: 1px 2px 20px -1px rgba(0, 0, 0, 0.75);
   cursor: pointer;
   margin-top: 10px;
+  font-family: "Poppins", sans-serif;
 `;
+
+export const WrapSectionImage = styled.div``;

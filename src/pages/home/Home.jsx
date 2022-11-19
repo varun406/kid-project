@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { GlobalStyles } from "../../components/CommonStyles";
 import Course from "../../components/course/Course";
 import CTA from "../../components/cta/CTA";
@@ -17,13 +17,11 @@ const Home = () => {
   return (
     <Box>
       <GlobalStyles />
-
-      {/* <Sidebar /> */}
       <Header />
       <Wrapper>
         <Carousel />
         <Details />
-        <Course />
+        <Course heading="Popular Courses" />
         <CTA CTAHeading={CTAHeading} CTACall={CTACall} />
       </Wrapper>
       <Footer />

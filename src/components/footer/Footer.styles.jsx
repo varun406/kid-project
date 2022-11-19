@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 `;
 
 export const FooterWrap = styled.div`
-  width: calc(100% - 20px);
+  width: calc(100% - 40px);
   margin-inline: auto;
   display: flex;
   flex-direction: row;

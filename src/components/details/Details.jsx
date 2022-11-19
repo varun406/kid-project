@@ -13,33 +13,37 @@ import {
   RightSection,
   Wrapper,
 } from "./Details.styles";
+import Fade from "react-reveal/Fade";
 
 const Details = () => {
   return (
     <Container bgColor=" #f7f7f7">
-      <Wrapper>
-        <DetailSection>
-          <LeftSection>
-            <SectionImage src="./assets/detail.jpg" alt="detail-image" />
-          </LeftSection>
-          <RightSection>
-            <DetailsSection>
-              <DetailsInfo>
-                <SectionHeading>What We Excel In</SectionHeading>
-                <SectionDesc>
-                  Aliquam convallis quis mi id consequat. Morbi tellus massa,
-                  viverra sed risus at, vulputate rhoncus elit. Maecenas at
-                  consequat odio. Nunc sed urna sit amet erat mollis tempus ut
-                  eu felis. Nam et tempor libero. Nunc elit purus, sodales ac
-                  pretium sed, fermentum sit amet erat. In vestibulum tincidunt
-                  hendrerit. Praesent viverra, urna non aliquet sagittis, libero
-                  quam sodales tortor, vitae ornare augue lectus eu libero.
-                </SectionDesc>
-              </DetailsInfo>
-            </DetailsSection>
-          </RightSection>
-        </DetailSection>
-      </Wrapper>
+      <Fade left>
+        <Wrapper>
+          <DetailSection>
+            <LeftSection>
+              <SectionImage src="./assets/detail.jpg" alt="detail-image" />
+            </LeftSection>
+            <RightSection>
+              <DetailsSection>
+                <DetailsInfo>
+                  <SectionHeading>What We Excel In</SectionHeading>
+                  <SectionDesc>
+                    Aliquam convallis quis mi id consequat. Morbi tellus massa,
+                    viverra sed risus at, vulputate rhoncus elit. Maecenas at
+                    consequat odio. Nunc sed urna sit amet erat mollis tempus ut
+                    eu felis. Nam et tempor libero. Nunc elit purus, sodales ac
+                    pretium sed, fermentum sit amet erat. In vestibulum
+                    tincidunt hendrerit. Praesent viverra, urna non aliquet
+                    sagittis, libero quam sodales tortor, vitae ornare augue
+                    lectus eu libero.
+                  </SectionDesc>
+                </DetailsInfo>
+              </DetailsSection>
+            </RightSection>
+          </DetailSection>
+        </Wrapper>
+      </Fade>
     </Container>
   );
 };

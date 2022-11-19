@@ -1,3 +1,4 @@
+import Slider from "react-slick";
 import styled from "styled-components";
 
 export const Heading = styled.h1`
@@ -7,14 +8,38 @@ export const Heading = styled.h1`
 `;
 
 export const Wrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  max-width: 100%;
+  min-height: 350px;
+`;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
+export const CourseSlider = styled(Slider)`
+  button {
+    z-index: 999;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+  button:hover {
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.8;
+  }
+
+  .slick-prev {
+    left: 3% !important;
+    z-index: 1;
+  }
+  .slick-next {
+    right: 3% !important;
+    z-index: 1;
+  }
+
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
   }
 `;
+
+export const CardSection = styled.div``;

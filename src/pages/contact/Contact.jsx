@@ -22,8 +22,9 @@ import {
 } from "./Contact.styles";
 
 import { yupResolver } from "@hookform/resolvers/yup";
-import { schema } from "../../components/auth/validator";
 import { useForm } from "react-hook-form";
+import Pulse from "react-reveal/Pulse";
+// import { contactSchema } from "./contactSchema";
 
 const Contact = () => {
   const {
@@ -32,32 +33,31 @@ const Contact = () => {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm({ resolver: yupResolver(schema) });
+  } = useForm();
 
-  const onSubmit = (d) => {
+  const onSubmitt = (d) => {
     console.log(d);
     alert(JSON.stringify(d));
     reset();
   };
+
+  console.log(watch("name"));
 
   return (
     <Container>
       <GlobalStyles />
       <Header />
       <Wrapper>
-        <StyledHeading>
-          Love to hear from you,
-          <Break /> Get in touch👋
-        </StyledHeading>
-        <ContactWrap onSubmit={handleSubmit(onSubmit)}>
+        <Pulse>
+          <StyledHeading>
+            Love to hear from you,
+            <Break /> Get in touch👋
+          </StyledHeading>
+        </Pulse>
+        <ContactWrap onSubmit={handleSubmit(onSubmitt)}>
           <InputSection>
             <InputLabel>Your name</InputLabel>
-            <StyledInputField
-              type="text"
-              {...register("name", {
-                pattern: /^[A-Za-z]+$/i,
-              })}
-            />
+            <StyledInputField type="text" {...register("name")} />
             <Error>{errors.name?.message}</Error>
           </InputSection>
           <InputSection>
@@ -81,7 +81,7 @@ const Contact = () => {
             <Error>{errors.message?.message}</Error>
           </TextAreaSection>
         </ContactWrap>
-        <StyledFormButton>
+        <StyledFormButton type="submit">
           Just Send
           <CallMade />
         </StyledFormButton>

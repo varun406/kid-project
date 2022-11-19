@@ -11,7 +11,6 @@ export const Wrapper = styled.div`
 
 export const LoginWrap = styled.div`
   width: min(820px, calc(100% - 20px));
-  min-height: 590px;
   display: flex;
   border-radius: 15px;
   overflow: hidden;
@@ -43,6 +42,7 @@ export const LoginSection = styled.form`
   min-width: 300px;
   display: flex;
   flex-direction: column;
+  padding-block: 30px;
 `;
 export const HeadingSection = styled.div``;
 export const Heading = styled(SectionHeading)`
